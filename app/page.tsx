@@ -1,28 +1,50 @@
+'use client'
+
 import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
+import SplitText from "../components/UI/SpliText"
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import About from "./about/page";
+import Blog from "./blog/page";
+import DocsPage from "./docs/page";
 
+const handleAnimationComplete = () => {
+  console.log("Animation complete");
+};
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
+      <div className="inline-block max-w-full text-center justify-center mt-25">
+        <SplitText
+          className="text-7xl font-semibold text-center mb-4"
+          delay={70}
+          duration={2}
+          ease="elastic.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+          onLetterAnimationComplete={handleAnimationComplete}
+          text="Hola, soy Jorge Reynaga"
+        />
         <br />
-        <span className={title()}>
-          websites regardless of your design experience.
+        <span className={title({ size: "sm", color: "violet" })}>FullStack Developer&nbsp;</span>
+        <br />
+        <span className={title({ size: "sm", color: "cyan" })}>
+          +4 años de experiencia
         </span>
         <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+          Experto en el frontend y backend, construyendo aplicaciones web
+          y Chatbots con IA.
         </div>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 mb-20">
         <Link
           isExternal
           className={buttonStyles({
@@ -30,9 +52,9 @@ export default function Home() {
             radius: "full",
             variant: "shadow",
           })}
-          href={siteConfig.links.docs}
+          href={"/files/cv-luis-jorge.pdf"}
         >
-          Documentation
+          CV
         </Link>
         <Link
           isExternal
@@ -42,14 +64,26 @@ export default function Home() {
           <GithubIcon size={20} />
           GitHub
         </Link>
+        <Link
+          isExternal
+          className={buttonStyles({ variant: "bordered", radius: "full" })}
+          href={siteConfig.links.linkedin}
+        >
+          <LinkedinIcon size={20} />
+          LinkedIn
+        </Link>
       </div>
 
       <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-        </Snippet>
+        <div className="mb-16">
+          <About />
+        </div>
+        <div className="mb-16">
+          <Blog />
+        </div>
+        <div className="mb-16">
+          <DocsPage />
+        </div>
       </div>
     </section>
   );

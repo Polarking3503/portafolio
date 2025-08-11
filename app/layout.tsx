@@ -1,24 +1,14 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
+import { Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
+import DarkVeil from "../components/UI/DarkVeil"
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
 
 export const viewport: Viewport = {
   themeColor: [
@@ -42,6 +32,14 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+          <DarkVeil
+            speed={0.8}
+            hueShift={43}
+            noiseIntensity={0}
+            scanlineFrequency={0.5}
+            scanlineIntensity={0}
+            warpAmount={2.5}
+          />
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
@@ -51,11 +49,11 @@ export default function RootLayout({
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://heroui.com?utm_source=next-app-template"
+                href="https://www.linkedin.com/in/luis-jorge-reynaga-56b257235/"
                 title="heroui.com homepage"
               >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">HeroUI</p>
+                <span className="text-default-600">Desarrollado por</span>
+                <p className="text-primary">Jorge Reynaga</p>
               </Link>
             </footer>
           </div>
