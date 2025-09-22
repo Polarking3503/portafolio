@@ -68,7 +68,7 @@ export default function DocsPage() {
       title: "Dashboard para Arrendamientos",
       img: "/images/dash_arrendamiento.png",
       price: "WEB",
-      description: "Dashboard para gestión de propiedades en alquiler: pagos, contratos, mantenimiento y reportes financieros.",
+      description: "Dashboard para gestión de arrendamientos: cotizaciones, precalificaciones, accionistas y reportes financieros.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MySQL", "Rest API", "PostCSS", "NextAuth"],
 
     },
