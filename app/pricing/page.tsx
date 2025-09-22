@@ -48,7 +48,6 @@ const TechCategory = ({ title, technologies, color }: {
 export default function PricingPage() {
   const languages = [
     { name: "JavaScript", logo: "/images/js-logo.png", description: "ES6+" },
-    { name: "TypeScript", logo: "/images/TypeScript.png", description: "Typed JS" },
     { name: "Python", logo: "/images/python-logo.png", description: "3.8+" },
     { name: "PHP", logo: "/images/php-logo.png", description: "8.x" },
   ];
@@ -77,6 +76,12 @@ export default function PricingPage() {
     { name: "LangGraph", logo: "/images/langgraph.png", description: "Agent Framework" },
   ];
 
+  const webTechnologies = [
+    { name: "HTML5", logo: "/images/html-logo.png", description: "Markup Language" },
+    { name: "CSS3", logo: "/images/css-logo.png", description: "Styling Language" },
+    { name: "TypeScript", logo: "/images/TypeScript.png", description: "JS Superset" },
+  ];
+
   const tools = [
     { name: "Firebase", logo: "/images/firebase.png", description: "BaaS Platform" },
     { name: "GitHub", logo: "/images/github.png", description: "Version Control" },
@@ -103,11 +108,12 @@ export default function PricingPage() {
 
       <div className="max-w-6xl mx-auto">
         <TechCategory title="Lenguajes de Programación" technologies={languages} color="primary" />
-        <TechCategory title="Frameworks y Librerías" technologies={frameworks} color="secondary" />
-        <TechCategory title="Backend/Runtime" technologies={backend} color="success" />
-        <TechCategory title="Base de Datos" technologies={databases} color="warning" />
-        <TechCategory title="IA y LLMs" technologies={llms} color="danger" />
-        <TechCategory title="Herramientas" technologies={tools} color="default" />
+        <TechCategory title="Tecnologías Web" technologies={webTechnologies} color="secondary" />
+        <TechCategory title="Frameworks y Librerías" technologies={frameworks} color="success" />
+        <TechCategory title="Backend/Runtime" technologies={backend} color="warning" />
+        <TechCategory title="Base de Datos" technologies={databases} color="danger" />
+        <TechCategory title="IA y LLMs" technologies={llms} color="default" />
+        <TechCategory title="Herramientas" technologies={tools} color="primary" />
       </div>
     </div>
   );
