@@ -3,66 +3,63 @@ import { link } from "fs";
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Luis Jorge Reynaga - FullStack Developer",
+  description: "FullStack Developer con 4+ años de experiencia en desarrollo web, IA y automatización. Especializado en React, Next.js, Node.js y Python.",
   navItems: [
     {
-      label: "Home",
+      label: "Inicio",
       href: "/",
     },
     {
-      label: "Docs",
+      label: "Proyectos",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "Habilidades",
       href: "/pricing",
     },
     {
-      label: "Blog",
+      label: "Experiencia",
       href: "/blog",
     },
     {
-      label: "About",
+      label: "Sobre mí",
       href: "/about",
+    },
+    {
+      label: "Contacto",
+      href: "/contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Inicio",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Proyectos",
+      href: "/docs",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Habilidades",
+      href: "/pricing",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Experiencia",
+      href: "/blog",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Sobre mí",
+      href: "/about",
     },
     {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contacto",
+      href: "/contact",
     },
   ],
   links: {
     github: "https://github.com/Polarking3503",
-    linkedin: "https://www.linkedin.com/in/luis-jorge-reynaga-56b257235/"
+    linkedin: "https://www.linkedin.com/in/luis-jorge-reynaga-56b257235/",
+    email: "mailto:reynaga_45@icloud.com?subject=Contacto desde Portafolio&body=Hola Luis Jorge,%0D%0A%0D%0AMe gustaría contactarte sobre..."
   },
 };

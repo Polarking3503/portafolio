@@ -1,3 +1,5 @@
+'use client';
+
 import { Accordion, AccordionItem } from "@heroui/react";
 import { Code } from "@heroui/code";
 
@@ -9,7 +11,7 @@ export default function BlogPage() {
         <AccordionItem
           key="1"
           aria-label="Full-Stack Developer"
-          title="Full-Stack Developer"
+          title="Full-Stack Developer (11/2024 - Presente)"
           subtitle={
             <span className="text-xs text-default-500">
               Vulcanics • <strong>Remoto — San Luis Potosí, México</strong>
@@ -80,8 +82,8 @@ export default function BlogPage() {
 
         <AccordionItem
           key="2"
-          aria-label="Desarrollador Frontend"
-          title="Desarrollador Frontend"
+          aria-label="Full-Stack Developer"
+          title="Full-Stack Developer (08/2020 - 11/2024)"
           subtitle={
             <span className="text-xs text-default-500">
               Freelancer • <strong>Autlán de Navarro, Jalisco</strong>

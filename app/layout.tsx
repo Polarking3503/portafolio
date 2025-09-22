@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 import { Providers } from "./providers";
 
-import DarkVeil from "../components/UI/DarkVeil"
+import DarkVeil from "../components/UI/DarkVeil.jsx";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 

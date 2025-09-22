@@ -9,7 +9,6 @@ interface Project {
   price: string;
   description: string;
   technologies: string[];
-  link: string;
 }
 
 export default function DocsPage() {
@@ -22,64 +21,64 @@ export default function DocsPage() {
       img: "/images/equinos.jpeg",
       price: "WEB",
       description: "Sistema de gestión para crianza y registro de equinos. Incluye control genealógico, historial médico y seguimiento de competencias.",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
-      link: "#"
+      technologies: ["PHP", "MySQL", "Bootstrap", "JavaScript", "CSS"],
+
     },
     {
       title: "ExentoPlus",
       img: "/images/academy.jpeg",
       price: "WEB",
-      description: "Plataforma educativa online con cursos interactivos, evaluaciones automáticas y seguimiento del progreso estudiantil.",
-      technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-      link: "#"
+      description: "Sistema Integral Académico para gestión escolar completa: notas, asistencia, horarios y comunicación padres-profesores.",
+      technologies: ["Laravel", "JavaScript", "Bootstrap", "PHP", "Blade", "MySQL"],
+
     },
     {
       title: "SIA",
       img: "/images/school.png",
       price: "WEB",
-      description: "Sistema Integral Académico para gestión escolar completa: notas, asistencia, horarios y comunicación padres-profesores.",
+      description: "Sistema de gestión de estimulos y evaluaciones para los profesores.",
       technologies: ["Laravel", "Vue.js", "MySQL", "Bootstrap"],
-      link: "#"
+
     },
     {
       title: "Plataforma SaaS",
       img: "/images/saas.png",
       price: "WEB + IA",
       description: "Plataforma SaaS multi-tenant con IA integrada para automatización de procesos empresariales y análisis predictivo.",
-      technologies: ["React", "Python", "FastAPI", "PostgreSQL", "Docker", "OpenAI"],
-      link: "#"
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MySQL", "WebSocket", "PostCSS", "NextAuth", "Integracion con WABA", "LLM", "Express.js"],
+
     },
     {
       title: "Brokers Financieros",
       img: "/images/brokers.png",
       price: "App Móvil",
-      description: "Aplicación móvil para traders con análisis en tiempo real, gráficos interactivos y notificaciones de mercado.",
-      technologies: ["React Native", "Node.js", "WebSocket", "Redux"],
-      link: "#"
+      description: "Aplicación móvil para análisis financieros. Cotizaciones en tiempo real y alertas personalizadas.",
+      technologies: ["React Native", "TypeScript", "Expo", "Redux", "Firebase", "Node.js", "Rest API"],
+
     },
     {
       title: "Bot de Finanzas",
       img: "/images/bot.jpg",
       price: "IA",
       description: "Bot inteligente para asesoramiento financiero personal, análisis de gastos y recomendaciones de inversión.",
-      technologies: ["Python", "TensorFlow", "NLP", "Discord.py"],
-      link: "#"
+      technologies: ["Node.js", "Express", "MySQL", "Axios", "LLM", "Rest API"],
+
     },
     {
       title: "Dashboard para Arrendamientos",
       img: "/images/dash_arrendamiento.png",
       price: "WEB",
       description: "Dashboard para gestión de propiedades en alquiler: pagos, contratos, mantenimiento y reportes financieros.",
-      technologies: ["Vue.js", "Laravel", "Chart.js", "MySQL"],
-      link: "#"
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MySQL", "Rest API", "PostCSS", "NextAuth"],
+
     },
     {
       title: "Dashboard de Chatbot",
       img: "/images/bot-dash.webp",
       price: "WEB + IA",
       description: "Panel de control para gestión de chatbots con IA, análisis de conversaciones y optimización automática.",
-      technologies: ["React", "Python", "FastAPI", "OpenAI", "WebSocket"],
-      link: "#"
+      technologies: ["React", "Python", "FastAPI", "LLM", "WebSocket", "Tailwind CSS"],
+
     },
   ];
 

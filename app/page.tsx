@@ -2,7 +2,7 @@
 
 import { Link } from "@heroui/link";
 import { button as buttonStyles } from "@heroui/theme";
-import SplitText from "../components/UI/SpliText"
+import SplitText from "../components/UI/SpliText.jsx";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
@@ -10,6 +10,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import About from "./about/page";
 import Blog from "./blog/page";
 import DocsPage from "./docs/page";
+import PricingPage from "./pricing/page";
 
 const handleAnimationComplete = () => {
   console.log("Animation complete");
@@ -39,7 +40,7 @@ export default function Home() {
           +4 años de experiencia
         </span>
         <div className={subtitle({ class: "mt-4" })}>
-          Experto en el frontend y backend, construyendo aplicaciones web
+          Experto en el frontend y backend, construyendo aplicaciones web, moviles
           y Chatbots con IA.
         </div>
       </div>
@@ -83,6 +84,9 @@ export default function Home() {
         </div>
         <div className="mb-16">
           <DocsPage />
+        </div>
+        <div>
+          <PricingPage />
         </div>
       </div>
     </section>
