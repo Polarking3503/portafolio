@@ -18,12 +18,7 @@ export default function ContactPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4">
-      <div className="text-center mb-12">
-        <div className="mb-6">
-          <Chip size="lg" color="primary" variant="shadow" className="text-xl font-bold px-8 py-3">
-            📧 Contacto
-          </Chip>
-        </div>
+      <div className="text-center mb-5">
         <h1 className="text-6xl leading-20 font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
           ¡Hablemos!
         </h1>
@@ -32,7 +27,7 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         {/* Email Card */}
         <Card className="hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 hover:border-blue-500/50">
           <CardBody className="flex flex-col items-center justify-center p-8 text-center">
