@@ -11,7 +11,7 @@ export default function BlogPage() {
         <AccordionItem
           key="1"
           aria-label="Full-Stack Developer"
-          title="Full-Stack Developer (11/2024 - Presente)"
+          title="Full-Stack Developer (11/2024 - 09/2025"
           subtitle={
             <span className="text-md text-default-500">
               Vulcanics • <strong>Remoto — San Luis Potosí, México</strong>
